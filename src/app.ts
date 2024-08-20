@@ -1,7 +1,9 @@
 import fastify from 'fastify'
-import {z} from 'zod'
-import { hash } from 'bcryptjs'
-import { prisma } from './libs/prisma'
+import { usersRoutes } from './http/routes/user-routes';
+
 
 export const app = fastify();
+app.register(usersRoutes)
+
+
 
