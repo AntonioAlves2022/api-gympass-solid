@@ -4,11 +4,11 @@ import type { UsersRepository } from "./users-repository";
 export class UsersInMemoryRepository implements UsersRepository {
   public items: User[] = []
   async create(data: Prisma.UserCreateInput): Promise<User> {
-    const user = {
+    const user:User = {
       id: '1234-123-1234-12345a',
       name: data.name,
       email: data.email,
-      password_hash: data.password_hash,
+      password_hash: data.password_hash ?? null,
       created_at: new Date()
     }
 
