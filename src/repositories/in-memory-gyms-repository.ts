@@ -1,5 +1,5 @@
 import type { Gym } from "@prisma/client";
-import type { GymsRepository } from "./GymsRepository";
+import type { GymsRepository } from "./gyms-repository";
 
 export class InMemoryGymsRepository implements GymsRepository{
   public items:Gym[] = []
