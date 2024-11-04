@@ -10,7 +10,7 @@
 
 # REGRAS DE NEGÓCIO (RN)
  - [ ] O usuário não deve poder se cadastrar com um e-mail duplicado;
- - [ ] O usuário não deve poder realizar mais de um check-in no mesmo dia;
+ - [x] O usuário não deve poder realizar mais de um check-in no mesmo dia;
  - [ ] O usuário não deve poder realizar o check-in a uma distância superior a 100 metros da localização da academia;
  - [ ] O check-in deve ser validado em até 20 minutos após sua criação;
  - [ ] O check-in deve ser validado por um administrador da aplicação;
